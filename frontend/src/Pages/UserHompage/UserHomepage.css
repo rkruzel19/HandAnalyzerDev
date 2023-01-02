@@ -1,0 +1,53 @@
+.MainContainer{
+    background-color: blue;
+    height: 100vh;
+}
+
+header{
+    height: 20vh;
+    background-color: white;
+    display: flex;
+}
+
+.Logo{
+    background-color: yellow;
+    width: 20vw;
+}
+
+nav{
+    background-color: red;
+    width: 80vw;
+}
+
+.BodyArea{
+    background-color: orange;
+    display: flex;
+    height: 80vh;
+}
+
+.AccountInfo{
+    background-color: green;
+    width: 20vw;
+    height: auto;
+}
+
+.MainArea{
+    background-color: brown;
+    /* height: auto; */
+    width: 80vw;
+    display: grid;
+}
+
+.TournamentList{
+    background-color: blueviolet;
+    width: 70vw;
+    height: 45vh;
+    margin: auto;
+}
+
+.TournamentButtonPanel{
+    background-color: aqua;
+    width: 70vw;
+    height: 10vh;
+    margin: auto;
+}
