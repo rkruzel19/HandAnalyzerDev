@@ -1,5 +1,6 @@
 import './App.css';
-import UserHomepage from './Pages/UserHompage/UserHomepage';
+import AccountInfo from './components/accountInfo/AccountInfo';
+import UserHomepage from './pages/userHompage/UserHomepage';
 
 function App() {
   return (
