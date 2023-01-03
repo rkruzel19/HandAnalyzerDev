@@ -1,3 +1,4 @@
+import AccountInfo from "../../components/accountInfo/AccountInfo"
 import "./UserHomepage.css"
 
 export default function UserHomepage(){
@@ -13,11 +14,7 @@ export default function UserHomepage(){
             </header>
             <div className="BodyArea">
                 <div className="AccountInfo">
-                    <ul>
-                        <li>User Info</li>
-                        <li>Stats</li>
-                        <li>Account Info</li>
-                    </ul>
+                    <AccountInfo />
                 </div>
                 <div className="MainArea">
                     <div className="TournamentList">
