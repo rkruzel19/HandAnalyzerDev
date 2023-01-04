@@ -5,7 +5,7 @@ export default function WelcomePage(){
         <div className="Container">
             <div className="WelcomeMessage">
                 WholeCard Poker<br/>
-                Take A Step Back To See The Clearer Picture
+                Take A Step Back To See The Bigger Picture
             </div>
             <div className="BodyArea">
                 <div className="DisplayField">
