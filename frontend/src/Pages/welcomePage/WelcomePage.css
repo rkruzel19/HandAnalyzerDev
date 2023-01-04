@@ -1,0 +1,29 @@
+.Container{
+    background-color: royalblue;
+    height: 100vh;
+}
+
+.WelcomeMessage{
+    background-color: yellow;
+    height: 20vh;
+}
+
+.BodyArea{
+    background-color: green;
+    height: 80vh;
+    display: flex;
+}
+
+.DisplayField{
+    background-color: aqua;
+    height: 60vh;
+    width: 60vw;
+    margin: auto;
+}
+
+.LoginArea{
+    background-color: brown;
+    height: 40vh;
+    width: 20vw;
+    margin: auto;
+}
