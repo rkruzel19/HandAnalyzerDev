@@ -1,3 +1,4 @@
+import Login from "../../components/login/Login"
 import "./WelcomePage.css"
 
 export default function WelcomePage(){
@@ -12,7 +13,7 @@ export default function WelcomePage(){
                     Images and New User Form
                 </div>
                 <div className="LoginArea">
-                    Login here
+                    <Login />
                 </div>
             </div>
         </div>
