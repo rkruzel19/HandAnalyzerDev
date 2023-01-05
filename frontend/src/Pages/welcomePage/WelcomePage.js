@@ -1,4 +1,5 @@
 import Login from "../../components/login/Login"
+import UserRegistration from "../../components/userRegistration/UserRegistration"
 import "./WelcomePage.css"
 
 export default function WelcomePage(){
@@ -10,7 +11,7 @@ export default function WelcomePage(){
             </div>
             <div className="BodyArea">
                 <div className="DisplayField">
-                    Images and New User Form
+                    <UserRegistration />
                 </div>
                 <div className="LoginArea">
                     <Login />

@@ -1,0 +1,20 @@
+.registrationContainer{
+    display: flex;
+    height: inherit;
+}
+
+.reasonsToRegister{
+    margin: auto;
+}
+
+.registrationForm{
+    margin: auto;
+}
+
+.registrationForm > *{
+    margin: 8px;
+}
+
+.registrationForm > * > *{
+    margin-right: 6px;
+}

@@ -7,15 +7,15 @@ export default function Login(){
     const [userName, setUserName] = useState("")
     const [password, setPassword] = useState("")
 
-    // function authenticateUser() {
-    //     axios.post('http://localhost:8080/user/login', {
-    //         userName: userName, 
-    //         password: password
-    //     }).then((response) =>{
-    //         const userData = response.data[0]
-    //         console.log(userData)
-    //     })
-    // }
+    function authenticateUser() {
+        axios.post('http://localhost:8080/user/login', {
+            userName: userName, 
+            password: password
+        }).then((response) =>{
+            const userData = response.data[0]
+            console.log(userData)
+        })
+    }
 
     return (
         <div className="LoginContainer">
@@ -32,7 +32,6 @@ export default function Login(){
                         value = {userName}
                     />
                 </div>
-                {userName}
                 <div className="password">
                     <label>Password:</label>
                     <input
@@ -43,7 +42,7 @@ export default function Login(){
                     />
                 </div>
             </div>
-            <button>Login</button>
+            <button onClick={authenticateUser}>Login</button>
             <button>Create Account</button>
         </div>
     )
