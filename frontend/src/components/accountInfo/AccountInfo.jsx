@@ -13,6 +13,7 @@ export default function AccountInfo(){
 
     useEffect(() => {
         AccountInfoService.getUserInfo().then(res => {
+            // console.log("test 1")
             setId(res.data.id)
             setFirstName(res.data.firstName)
             setLastName(res.data.lastName)
