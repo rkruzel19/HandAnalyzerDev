@@ -1,7 +1,21 @@
 import AccountInfo from "../../components/accountInfo/AccountInfo"
 import "./UserHomepage.css"
+import HandData from "../../ScheduledTournament.txt"
 
 export default function UserHomepage(){
+
+    function handleClick(){
+        fetch(HandData)
+        .then(function(response) {
+            return response.text()
+        })
+        .then(function(data){
+            // setFileText(data)
+            // setTournament(setupTournament(data))
+            console.log(data)
+        })
+    }
+
     return (
         <div className="MainContainer">
             <header>
@@ -21,6 +35,7 @@ export default function UserHomepage(){
                         Tournament List Component
                     </div>
                     <div className="TournamentButtonPanel">
+                        <button onClick={handleClick}>Add Tournament</button>
                         Buttons for CRUD actions associated with Tournaments
                     </div>
                 </div>

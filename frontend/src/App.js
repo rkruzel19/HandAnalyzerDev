@@ -6,8 +6,8 @@ import WelcomePage from './pages/welcomePage/WelcomePage';
 function App() {
   return (
     <div className="App">
-      {/* <UserHomepage /> */}
-      <WelcomePage />
+      <UserHomepage />
+      {/* <WelcomePage /> */}
     </div>
   );
 }

@@ -9,6 +9,7 @@ export default function UserRegistration(){
     const [lastName, setLastName] = useState("")
     const [password, setPassword] = useState("")
     const [email, setEmail] = useState("")
+    const [birthday, setBirthday] = useState("")
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -18,6 +19,7 @@ export default function UserRegistration(){
             firstName: firstName,
             lastName: lastName,
             email: email,
+            birthday: birthday
         }).then((response) =>{
             console.log(response)
         })
@@ -77,6 +79,15 @@ export default function UserRegistration(){
                         name = "password"
                         type = "text"
                         value = {password}
+                    />
+                </div>
+                <div className="birthday">
+                    <label>Birthday:</label>
+                    <input
+                        onChange = {(e) => setBirthday(e.target.value)}
+                        name = "birthday"
+                        type = "text"
+                        value = {birthday}
                     />
                 </div>
                 <button>Create Account</button>
